@@ -20,6 +20,7 @@ public class Picture {
     private Square window;
     private Triangle roof;
     private Circle sun,sun2;
+    private Boolean terrefixe = true;
 
     /**
      * Constructor for objects of class Picture
@@ -92,6 +93,8 @@ public class Picture {
      * Hide the sun
      */
     public void seCoucher(){
+        if(terrefixe=true){
         sun.slowMoveVertical(400);
+    }
     }
 }
